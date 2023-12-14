@@ -1,16 +1,17 @@
 function solution(N, M, pocketMons, questions) {
   // 여기에 코드를 작성해주세요
   const pocketMonsDic = {};
+  const answer = [];
+
   pocketMons.forEach((name, index) => {
     pocketMonsDic[name] = index + 1;
+    pocketMonsDic[index + 1] = [name];
   });
   questions.forEach((question) => {
-    if (Number(question)) {
-      console.log(pocketMons[Number(question) - 1]);
-    } else {
-      console.log(pocketMonsDic[question]);
-    }
+    answer.push(pocketMonsDic[question]);
   });
+
+  console.log(answer.join("\n"));
 }
 
 const readline = require("node:readline");
