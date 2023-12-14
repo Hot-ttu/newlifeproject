@@ -13,3 +13,12 @@ rl.on("line", (line) => {
   rl.close();
   process.exit();
 });
+
+const input = [];
+
+rl.on("line", (line) => {
+  input.push(line);
+}).on("close", () => {
+  solution(num);
+  process.exit();
+});
