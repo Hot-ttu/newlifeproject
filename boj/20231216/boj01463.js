@@ -11,11 +11,8 @@ const input = fs
 const N = +input;
 
 memo = new Array(N + 1).fill(0);
-memo[1] = 0;
-memo[2] = 1;
-memo[3] = 1;
 
-for (let i = 4; i < N + 1; i++) {
+for (let i = 2; i < N + 1; i++) {
   if (!(i % 3)) {
     if (!(i % 2)) {
       memo[i] = Math.min(memo[Math.floor(i / 3)], memo[Math.floor(i / 2)], memo[i - 1]) + 1;
