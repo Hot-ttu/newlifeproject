@@ -26,25 +26,27 @@ const binarySearch = (arr, start, end, num) => {
 };
 
 let result = [soldiers[0]];
-let ret = 0;
 
-// soldiers.forEach((soldier) => {
-//   let index = binarySearch(result, 0, result.length, soldier);
-//   if (!result[index]) {
-//     result[index] = soldier;
-//   } else if (result[index] > soldier) {
-//     result[index] = soldier;
-//   }
-// });
-
-for (let i = 1; i < N; i++) {
-  if (soldiers[i] > result[result.length - 1]) {
-    result.push(soldiers[i]);
-    ret = result.length - 1;
-  } else {
-    let index = binarySearch(result, 0, ret, soldiers[i]);
-    result[index] = soldiers[i];
+soldiers.forEach((soldier) => {
+  let index = binarySearch(result, 0, result.length, soldier);
+  if (!result[index] && result[index - 1] < soldier) {
+    result[index] = soldier;
+  } else if (result[index] > soldier) {
+    result[index] = soldier;
   }
-}
+});
+
+// let result = [soldiers[0]];
+// let ret = 0;
+
+// for (let i = 1; i < N; i++) {
+//   if (soldiers[i] > result[result.length - 1]) {
+//     result.push(soldiers[i]);
+//     ret = result.length - 1;
+//   } else {
+//     let index = binarySearch(result, 0, ret, soldiers[i]);
+//     result[index] = soldiers[i];
+//   }
+// }
 
 console.log(N - result.length);
