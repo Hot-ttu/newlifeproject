@@ -11,7 +11,7 @@ const input = fs
 
 const T = +input[0];
 
-const result = [];
+result = [];
 for (let testCase = 0; testCase < T; testCase++) {
   const N = +input[testCase * 4 + 1];
 
