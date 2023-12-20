@@ -1,13 +1,11 @@
+2
 3
+hat headgear
+sunglasses eyewear
+turban headgear
 5
-4 1 5 2 3
-5
-1 3 7 9 5
-5
-4 1 5 2 3
-5
-1 3 7 9 5
-5
-4 1 5 2 3
-5
-1 3 7 9 5
+mask face
+sunglasses eyewear
+makeup headgear
+turban headgear
+teasure leg
