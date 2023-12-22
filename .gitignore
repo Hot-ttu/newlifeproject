@@ -55,5 +55,5 @@ Temporary Items
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode
 
-boj/main.js
-boj/input.txt
+main.js
+input.txt
