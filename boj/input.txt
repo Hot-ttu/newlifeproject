@@ -1,11 +1,1 @@
 2
-3
-hat headgear
-sunglasses eyewear
-turban headgear
-5
-mask face
-sunglasses eyewear
-makeup headgear
-turban headgear
-teasure leg
