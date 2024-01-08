@@ -40,3 +40,4 @@ for (let i = 0; i < M; i++) {
 }
 
 console.log(cnt);
+// 시초
