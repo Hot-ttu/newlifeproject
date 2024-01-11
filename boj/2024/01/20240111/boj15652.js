@@ -11,7 +11,6 @@ const result = [];
 let perm = [];
 const Perm = (idx, depth) => {
   if (depth === M) {
-    console.log(perm);
     result.push([...perm]);
     return;
   }
