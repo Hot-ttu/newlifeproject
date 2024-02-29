@@ -7,7 +7,7 @@ const input = fs
 
 const [N, M] = input.shift().split(" ").map(Number);
 
-const X = Math.floor((9 * M) / 10 + 0.9);
+const X = Math.ceil((9 * M) / 10);
 
 const AList = input.shift().split(" ").map(Number);
 
